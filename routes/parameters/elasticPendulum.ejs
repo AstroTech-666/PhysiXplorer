@@ -1,9 +1,13 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastic Pendulum Explanation</title>
     <style>
-        .explanation{
+        .explanation {
         }
-        .sim_explanation{
+        .sim_explanation {
             margin-top: 2.5em;
             font-size: 20px;
             font-weight: 150;
@@ -15,10 +19,14 @@
             margin-left: auto;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 </head>
 <body>
-<div class = "explanation">
-    <h1 class = "sim_explanation" style="font-size:35px;">Explanation</h1>
+<div class="explanation">
+    <h1 class="sim_explanation" style="font-size:35px;">Explanation</h1>
     <p class="sim_explanation">This is an elastic pendulum where a bob is fixed on one end of a spring and the other is
     fixed in place.</p>
 
@@ -30,8 +38,7 @@
 
     <p class="sim_explanation">For our case, we will use polar coordinates (\(\theta\) will be the angle of oscillation
         and \(r\) will be the length of the spring) to make the derivation easier, but the Lagrangian should work just
-        as well with any other set of coordinates. We'll begin by finding \(T\), the kinetic energy.
-    </p>
+        as well with any other set of coordinates. We'll begin by finding \(T\), the kinetic energy.</p>
 
     <p class="sim_explanation">$$T=\frac{1}{2}mv^2$$</p>
     <p class="sim_explanation">In polar coordinates, it becomes</p>
@@ -51,7 +58,7 @@
 
     <p class="sim_explanation">With the kinetic and potential energies of the system, we can go back to the Lagrangian:</p>
     <p class="sim_explanation">$$L = T - V$$</p>
-    <p class="sim_explanation">$$L=\frac{1}{2}m(\dot{r}^2+(r\dot{\theta})^2-(-mgr\cos(\theta)+\frac{1}{2}kr^2)$$</p>
+    <p class="sim_explanation">$$L=\frac{1}{2}m(\dot{r}^2+(r\dot{\theta})^2-(-mgr\cos(\theta)+\frac{1}{2}kr^2))$$</p>
     <p class="sim_explanation">And with some simplification, we get:</p>
     <p class="sim_explanation">$$L=\frac{1}{2}m\dot{r}^2+\frac{1}{2}mr^2\dot{\theta}^2+mgr\cos(\theta)-\frac{1}{2}kr^2$$</p>
 
@@ -66,7 +73,7 @@
     <p class="sim_explanation">At this point, we will move onto the equations of motion with respect to \(\theta\).
         Again, we start with the Euler-Lagrange equations:</p>
     <p class="sim_explanation">$$\frac{d}{dt} \frac{\partial L}{\partial \dot{\theta}} = \frac{\partial L}{\partial \theta}$$</p>
-    <p class="sim_explanation">$$\frac{d}{dt}(mr^2\dot{theta}) = -mgr\sin(\theta)$$</p>
+    <p class="sim_explanation">$$\frac{d}{dt}(mr^2\dot{\theta}) = -mgr\sin(\theta)$$</p>
     <p class="sim_explanation">$$mr^2\ddot{\theta} + 2mr\dot{r}\dot{\theta} = -mgr\sin(\theta)$$</p>
     <p class="sim_explanation">$$\ddot{\theta} = \frac{-mgr\sin(\theta) - 2mr\dot{r}\dot{\theta}}{mr^2}$$</p>
     <p class="sim_explanation">$$\ddot{\theta} = \frac{-g\sin(\theta)}{r} - \frac{2\dot{r}\dot{\theta}}{r}$$</p>
@@ -79,5 +86,5 @@
         and if you found any mistakes or have comments or concerns, please reach out to us in the about page.</p>
 
 </div>
-</div>
 </body>
+</html>
