@@ -86,8 +86,7 @@ const simulations = [{
 
 
 function getFile(filename) {
-  str = fs.readFileSync(path.resolve(__dirname, filename), "utf-8");
-  return str;
+  return fs.readFileSync(path.join(__dirname, filename), "utf-8");
 }
 
 module.exports = simulations;
