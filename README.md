@@ -65,6 +65,8 @@ We’re always looking for new contributors who are passionate about physics and
 
 Join us in revolutionizing how physics is taught and experienced! 🎓👨‍🔬👩‍🔬
 
+Start exploring: [PhysiXplorer Website](https://physixplorer.vercel.app/)
+
 ---
 
 Happy experimenting, and let’s make physics FUN again! ✨
