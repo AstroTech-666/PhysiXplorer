@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "echo 'No build step necessary for this app'" 
+    "build": "echo 'No build step necessary for this app'"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,3 +18,4 @@
     "npm-install-global": "^1.0.0",
     "p5": "^1.0.0"
   }
+}
